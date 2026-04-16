@@ -15,6 +15,7 @@ Histerese Dinâmica: Ajuste automático do limiar de sensibilidade para ignorar 
 Notificações Remotas: Alertas imediatos via API do Telegram e protocolo SMTP (Gmail) ao detetar choro persistente.
 
 <img width="768" height="274" alt="image" src="https://github.com/user-attachments/assets/3e0aafbc-080e-4708-ab91-7e3904ef0e4d" />
+
 _A imagem mostra a notificação recebida via telegram._
 
 Proteção Temporal: Algoritmo que filtra ruídos isolados e mantém o sistema ativo durante pausas respiratórias naturais do bebé.
@@ -43,6 +44,7 @@ Detecção de Choro: Validação da persistência do sinal mesmo com interferên
 **Configuração e Instalação**
 
 Hardware: Siga o esquema de pinos detalhado nos arquivos .ino (PINO_SENSOR = 34, PINO_SERVO = 23, etc.).
+
 Broker MQTT: Certifique-se de que o Eclipse Mosquitto está rodando no seu servidor local.
 
 Servidor Python:
