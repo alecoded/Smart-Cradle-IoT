@@ -37,8 +37,11 @@ Protocolos: CoAP, MQTT, HTTP (API Telegram) e SMTP.Software: Python 3, Flask, Pa
 **Resultados de Validação**
 
 O sistema foi submetido a testes rigorosos demonstrando alta imunidade a falsos positivos:
+
 Estado de Repouso: Ruído de fundo estável entre 123 e 263 unidades ADC, bem abaixo do limiar de ativação (2500).
+
 Atuação com Música: O sistema elevou o limiar para 3050, conseguindo "ignorar" o ruído da própria atuação (picos de 2300).
+
 Detecção de Choro: Validação da persistência do sinal mesmo com interferência sonora.
 
 **Configuração e Instalação**
