@@ -5,13 +5,18 @@ https://github.com/user-attachments/assets/1b5fe12c-a84f-41a4-8e70-34ba9ef489fb
 
 Este projeto apresenta o desenvolvimento de um Berço Inteligente fundamentado numa arquitetura IoT híbrida de três camadas: Percepção, Intermediação e Decisão. 
 
-O sistema utiliza os protocolos CoAP e MQTT para garantir baixa latência e robustez no monitoramento neonatal. O sistema é capaz de detetar o choro e responder automaticamente com ações de conforto (balanço mecânico, musicoterapia e iluminação), mantendo os cuidadores informados através de notificações remotas.
+O sistema utiliza os protocolos CoAP e MQTT para garantir baixa latência e robustez no monitoramento neonatal. 
+
+O sistema é capaz de detetar o choro e responder automaticamente com ações de conforto (balanço mecânico, musicoterapia e iluminação), mantendo os cuidadores informados através de notificações remotas.
 
 **Funcionalidades Principais**
 
 Monitoramento em Tempo Real: Captura de áudio e visualização de dados via dashboard web.
+
 Atuação Automática: Acionamento de motor servo para balanço, LEDs endereçáveis e reprodução de música.
+
 Histerese Dinâmica: Ajuste automático do limiar de sensibilidade para ignorar o próprio ruído da música de ninar, evitando loops de feedback.
+
 Notificações Remotas: Alertas imediatos via API do Telegram e protocolo SMTP (Gmail) ao detetar choro persistente.
 
 <img width="768" height="274" alt="image" src="https://github.com/user-attachments/assets/3e0aafbc-080e-4708-ab91-7e3904ef0e4d" />
@@ -23,15 +28,21 @@ Proteção Temporal: Algoritmo que filtra ruídos isolados e mantém o sistema a
 **Arquitetura do Sistema**
 
 O projeto divide-se em três camadas lógicas para otimizar o tráfego de rede:
+
 Camada de Percepção (Nó de Borda): Um ESP32 realiza a leitura do sensor MAX9814 e controla os periféricos. Comunica via CoAP/UDP para garantir rapidez.
+
 Camada de Intermediação (Gateway): Um segundo ESP32 atua como ponte, traduzindo mensagens CoAP para MQTT/TCP.
+
 Camada de Decisão (Servidor): Um script Python com Flask processa a lógica de controle e gere a interface de monitoramento.
 
 **Tecnologias e Componentes**
 
 Microcontroladores: 2x ESP32 NodeMCU.
+
 Sensores: Módulo MAX9814 com Controle Automático de Ganho (AGC).
+
 Atuadores: Micro Servo 9G SG90 (modificado para 360°), LEDs WS2812B (NeoPixel) e Módulo DFPlayer Mini.
+
 Protocolos: CoAP, MQTT, HTTP (API Telegram) e SMTP.Software: Python 3, Flask, Paho-MQTT e Eclipse Mosquitto (Broker).
 
 **Resultados de Validação**
