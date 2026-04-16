@@ -13,6 +13,10 @@ Monitoramento em Tempo Real: Captura de áudio e visualização de dados via das
 Atuação Automática: Acionamento de motor servo para balanço, LEDs endereçáveis e reprodução de música.
 Histerese Dinâmica: Ajuste automático do limiar de sensibilidade para ignorar o próprio ruído da música de ninar, evitando loops de feedback.
 Notificações Remotas: Alertas imediatos via API do Telegram e protocolo SMTP (Gmail) ao detetar choro persistente.
+
+<img width="768" height="274" alt="image" src="https://github.com/user-attachments/assets/3e0aafbc-080e-4708-ab91-7e3904ef0e4d" />
+_A imagem mostra a notificação recebida via telegram._
+
 Proteção Temporal: Algoritmo que filtra ruídos isolados e mantém o sistema ativo durante pausas respiratórias naturais do bebé.
 
 **Arquitetura do Sistema**
@@ -40,14 +44,19 @@ Detecção de Choro: Validação da persistência do sinal mesmo com interferên
 
 Hardware: Siga o esquema de pinos detalhado nos arquivos .ino (PINO_SENSOR = 34, PINO_SERVO = 23, etc.).
 Broker MQTT: Certifique-se de que o Eclipse Mosquitto está rodando no seu servidor local.
-Servidor Python:
 
+Servidor Python:
 Bashpip install flask paho-mqtt requests
 python server.py
 
 Firmware: Carregue o código do Gateway e do Berço nos respectivos ESP32 via Arduino IDE.
 
-Este projeto foi desenvolvido como parte da pesquisa académica no Departamento de Ciência da Computação da UDESC. 
-O artigo completo com a fundamentação teórica está disponível na pasta /docs.Referências Consultadas:Artigo Académico: "Berço Inteligente: Monitoramento de Bebês Utilizando IoT" (Alessandra da Silva Lima Pereira).
+Este projeto foi desenvolvido como parte da pesquisa académica no ** Departamento de Ciência da Computação da UDESC. **
+
+O artigo completo com a fundamentação teórica está disponível na pasta /docs.
+
+**Referências Consultadas:**
+
+Artigo Académico: "Berço Inteligente: Monitoramento de Bebês Utilizando IoT" (Alessandra da Silva Lima Pereira).
 
 Repositório de Código: Scripts de Servidor e Firmware ESP32 (fornecidos em Repositório.docx).
