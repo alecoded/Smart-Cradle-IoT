@@ -43,7 +43,9 @@ Sensores: Módulo MAX9814 com Controle Automático de Ganho (AGC).
 
 Atuadores: Micro Servo 9G SG90 (modificado para 360°), LEDs WS2812B (NeoPixel) e Módulo DFPlayer Mini.
 
-Protocolos: CoAP, MQTT, HTTP (API Telegram) e SMTP.Software: Python 3, Flask, Paho-MQTT e Eclipse Mosquitto (Broker).
+Protocolos: CoAP, MQTT, HTTP (API Telegram) e SMTP.
+
+Software: Python 3, Flask, Paho-MQTT e Eclipse Mosquitto (Broker).
 
 **Resultados de Validação**
 
