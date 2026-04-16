@@ -56,7 +56,7 @@ python server.py
 
 Firmware: Carregue o código do Gateway e do Berço nos respectivos ESP32 via Arduino IDE.
 
-Este projeto foi desenvolvido como parte da pesquisa académica no ** Departamento de Ciência da Computação da UDESC. **
+Este projeto foi desenvolvido como parte da pesquisa académica no** Departamento de Ciência da Computação da UDESC. **
 
 O artigo completo com a fundamentação teórica está disponível na pasta /docs.
 
